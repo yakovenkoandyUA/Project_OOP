@@ -1,0 +1,12 @@
+.idea/**
+.idea/
+.vscode/
+*.iml
+*.xml
+node_modules/
+package-lock.json
+node_modules/**/*.*
+dist/**/*
+*.psd
+*.xlsx
+*.txt

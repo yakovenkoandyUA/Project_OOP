@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Cards</title>
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Poppins:300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+          crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="main">
+    <div class="header">
+        <img class="header-logo" src="img/house.jpg" alt="Logo">
+        <h1 class="header-title">Princeton Plainsboro</h1>
+        <div class="login-form">
+            <i class="fas fa-user-alt icon-login hidden"></i>
+            <button class="header-login" id="loginBtn">Login</button>
+            <button id="create-form-btn">Create visit</button>
+        </div>
+    </div>
+    
+    <!-- Filter -->
+    
+    <div class="filter container">
+        <form class="form" id="search-form" action="">
+            <!--            <i class="fas fa-search icon-search"></i>-->
+            <input type="text" id="search-cards" class="filter-search"
+                   placeholder="Search...">
+            <div>
+                <h1 class="title-tasks">Status visit:</h1>
+                <select class="request-tasks" id="status-visit">
+                    <option>All</option>
+                    <option>Opened</option>
+                    <option>Finished</option>
+                </select>
+            </div>
+            <div>
+                <h1 class="title-tasks">Priority:</h1>
+                <select class="request-tasks" id="status-priority">
+                    <option>All</option>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+            </div>
+            <button class="search-button" id="search">Search</button>
+        </form>
+    </div>
+    
+    <!--  Visit cards  -->
+    
+    <div class="visit-wrapper container">
+        <h4 class="visit-wrapper-title">No items have been added.</h4>
+    </div>
+
+</section>
+
+<!-- Наши скрипты -->
+
+<script src="js/0-axios.js"></script>
+<script src="js/1-ajax_requests.js"></script>
+<script src="js/2-modal.js"></script>
+<script src="js/3-form.js"></script>
+<script src="js/4-visits.js"></script>
+<script src="js/5-DnD.js"></script>
+<script src="js/6-filter.js"></script>
+
+</body>
+</html>
+
+
